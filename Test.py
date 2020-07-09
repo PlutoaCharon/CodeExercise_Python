@@ -1,2 +1,2 @@
-for _ in range(3, 3):
-    print(_)
+list = [1,2,3]
+print(list[0:0])
