@@ -1,11 +1,9 @@
-import bisect
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-nums = [5, 2, 5, 6, 1]
 
-sorted_nums = []
-ans = []
-for n in nums[::-1]:
-    index = bisect.bisect_left(sorted_nums, n)
-    bisect.insort(sorted_nums, n)
-    ans.append(index)
-print(ans[::-1])
+head = ListNode(0)  # 头结点，无存储，指向链表第一个结点
+node = ListNode(1)
+print(head.val, node.val, head.next)
