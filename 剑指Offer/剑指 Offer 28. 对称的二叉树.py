@@ -20,3 +20,4 @@ class Solution:
 
         return recur(root.left, root.right)
 
+# matrix = map(list, zip(*(matrix[::-1])))
