@@ -53,3 +53,6 @@
 #         tmp = [l, r]
 #         res.append(tmp)
 # print(res)
+list1 = [1, 2, 3]
+ans = ""
+print("".join(list1[0]))
