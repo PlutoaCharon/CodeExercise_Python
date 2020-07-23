@@ -53,6 +53,13 @@
 #         tmp = [l, r]
 #         res.append(tmp)
 # print(res)
-list1 = [1, 2, 3]
-ans = ""
-print("".join(list1[0]))
+tmp = ["flower", "flow", "flight"]
+res = tmp[0]
+
+i = 1
+while i < len(tmp):
+    print(tmp[i].find(res))
+    while tmp[i].find(res) != 0:
+        res = res[0: len(res) - 1]
+    i = i + 1
+print(res)
