@@ -18,18 +18,25 @@ class Solution:
 '''
 
 # 使用列表
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[int]:
         if not root:
             return []
         res, queue = [], [root]
         while queue:
-            out = []
-            for i in queue:
-                res.append(i.val)
-                if i.left:
-                    out.append(i.left)
-                if i.right:
-                    out.append(i.right)
-            queue = out
+            size = len(queue)
+            for _ in range(size):
+                r = queue.pop(0)
+                res.append(r.val)
+                if r.left:
+                    queue.append(r.left)
+                if r.right:
+                    queue.append(r.right)
         return res
