@@ -11,5 +11,5 @@ def insertSort(arr):
 
 if __name__ == '__main__':
     arr = [2, 5, 3, 4, 1]
-    ans = insertSoft(arr)
+    ans = insertSort(arr)
     print(ans)

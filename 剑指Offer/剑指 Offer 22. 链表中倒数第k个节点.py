@@ -12,4 +12,3 @@ class Solution:
         while former:
             former, latter = former.next, latter.next
         return latter
-
