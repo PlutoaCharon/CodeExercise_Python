@@ -28,8 +28,8 @@ def heapSort(arr):
 
 
 if __name__ == '__main__':
-    # arr = [2, 5, 3, 4, 1]
-    # arr = [3, 2, 1, 9, 7, 8]
-    arr = [12, 11, 13, 5, 6, 7]
+    arr = [2, 5, 3, 4, 1]
+    # arr = [3, 2, 1, 9, 7, 8, 10]
+    # arr = [12, 11, 13, 5, 6, 7]
     ans = heapSort(arr)
     print(ans)
