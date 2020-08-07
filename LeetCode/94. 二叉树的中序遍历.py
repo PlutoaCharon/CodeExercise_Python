@@ -15,7 +15,8 @@ class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:
             return []
-        return self.inorderTraversal(root.left) + [root.val] +  self.inorderTraversal(root.right)
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+
 
 # 迭代
 # 时间复杂度：O(n)，n为节点数，访问每个节点恰好一次。
