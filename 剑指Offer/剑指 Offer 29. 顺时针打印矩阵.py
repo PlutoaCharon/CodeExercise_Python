@@ -6,4 +6,5 @@ class Solution:
             # 逆时针
             matrix = list(zip(*matrix))[::-1]
         return res
-    # 顺时针 matrix = map(list, zip(*(matrix[::-1])))
+    # matrix = list(map(list, zip(*(matrix[::-1]))) 顺时针
+    # matrix = list(map(list, zip(*matrix)))[::-1]  逆时针

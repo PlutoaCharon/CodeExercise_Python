@@ -65,3 +65,11 @@
 # print(res)
 
 print(1e9 + 7)
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# matrix = list(map(list, zip(*(matrix[::-1]))) 顺时针
+# matrix = list(map(list, zip(*matrix)))[::-1]  逆时针
+print(matrix)

@@ -6,3 +6,16 @@ class Solution:
             while i < j and nums[j] & 1 == 0: j -= 1
             nums[i], nums[j] = nums[j], nums[i]
         return nums
+
+
+# 不改变顺序
+class Solution:
+    def exchange(self, nums: List[int]) -> List[int]:
+        lo = []
+        le = []
+        for d in nums:
+            if d % 2 == 1:
+                lo.append(d)
+            else:
+                le.append(d)
+        return lo + le
