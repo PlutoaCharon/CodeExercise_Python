@@ -33,3 +33,16 @@ class Solution(object):
                 return False
         else:
             return False
+
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x != 0 and x % 10 == 0):
+            return False
+
+        tmp = 0
+        while x > tmp:
+            tmp = tmp * 10 + x % 10
+            x = x // 10
+        # 如果是奇数则去掉最后一位与x进行比较
+        return x == tmp or x == tmp // 10
