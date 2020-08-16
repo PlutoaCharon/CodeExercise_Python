@@ -73,12 +73,5 @@
 # # matrix = list(map(list, zip(*(matrix[::-1]))) 顺时针
 # # matrix = list(map(list, zip(*matrix)))[::-1]  逆时针
 # print(matrix)
-nums = [1, 2, 3, 4]
-for i in range(len(nums)):
-    for j in range(len(nums)):
-        if i != j:
-            # newnum = [nums[k] for k in range(len(nums)) if i != k != j]
-            for k in range(len(nums)):
-                if k != i != j:
-                # if i != k != j:
-                    print(nums[k])
+s = "123456789"
+print(s.index("12"))
