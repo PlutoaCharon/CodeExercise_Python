@@ -1,7 +1,5 @@
 class Solution:
     def countDigitOne(self, n: int) -> int:
-        if n < 0:
-            return 0
         digit, res = 1, 0
         high, cur, low = n // 10, n % 10, 0
         while cur != 0 or high != 0:
