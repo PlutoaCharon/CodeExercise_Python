@@ -5,6 +5,6 @@ class Solution:
         l, r = 0, len(s) - 1
         ans = ""
         while l <= r:
-            ans += s[l:l+k][::-1] + s[l+k:l+2*k]
-            l += 2*k
+            ans += s[l:l + k][::-1] + s[l + k:l + 2 * k]
+            l += 2 * k
         return ans
