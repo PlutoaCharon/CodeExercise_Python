@@ -35,6 +35,6 @@ class Solution:
         if root.val == sum and not root.left and not root.right:
             return True
         left = self.hasPathSum(root.left, sum - root.val)
-        right = self.hasPathSum(root.right, sum - root.right)
+        right = self.hasPathSum(root.right, sum - root.val)
 
         return left or right

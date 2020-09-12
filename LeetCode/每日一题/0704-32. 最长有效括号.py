@@ -1,7 +1,7 @@
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
         ans = 0  # 最大合法长度(返回值)
-        stack = [-1,]  # stack[0]:合法括号起点-1 ; stack[1:]尚未匹配左括号下标
+        stack = [-1, ]  # stack[0]:合法括号起点-1 ; stack[1:]尚未匹配左括号下  标
         for i, ch in enumerate(s):
             if '(' == ch:  # 左括号
                 stack.append(i)
